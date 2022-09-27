@@ -4,6 +4,8 @@ const list = document.querySelector("#players"); // CSS id selector
 
 const listID = document.getElementById("players");
 
+debugger
+
 console.log(list);
 console.log(listID);
 
@@ -48,3 +50,18 @@ const boris = document.getElementById('user');
 console.log("Boris dataset",boris.dataset);
 console.log(boris.dataset.uid);
 console.log(boris.dataset.githubNickname);
+
+
+// Event Listeners
+const romain = document.getElementById("romain");
+romain.addEventListener("click", (event) => {
+  console.log(event);
+  console.log(event.currentTarget);
+  // event.currentTarget.classList.toggle("img-circle");
+});
+
+document.querySelectorAll("img.avatar").forEach((img) => {
+  img.addEventListener("click", (event) => {
+    event.currentTarget.classList.toggle("img-circle");
+  });
+});
