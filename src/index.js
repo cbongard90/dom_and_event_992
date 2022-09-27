@@ -25,3 +25,26 @@ winners.forEach((winner) => {
 });
 
 fifaWinners.insertAdjacentHTML("beforeend", "<li>France (2 wins)</li>");
+
+const emailInput = document.getElementById("email");
+// Read
+console.log(emailInput.value);
+
+// Write
+emailInput.value = "john@gmail.com";
+
+console.log(emailInput.value);
+
+
+const home = document.getElementById("home");
+console.log(home.innerText);
+console.log(home.innerHTML);
+console.log(home.attributes.href.value);
+
+home.innerHTML = "Le Wagon <strong>rocks</strong>!"; // Update HTML
+
+// dataset
+const boris = document.getElementById('user');
+console.log("Boris dataset",boris.dataset);
+console.log(boris.dataset.uid);
+console.log(boris.dataset.githubNickname);
